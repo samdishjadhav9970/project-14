@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f5f2f0;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+
+.navbar-container .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    height: 20vh;
+    align-items: center;
+}
+.navbar-container .navbar .logo img {
+    width: 100px;
+}
+
+.navbar-container .navbar .list {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    font-size: 13px;
+    color: #868686;
+    align-items: center;
+    position: relative;
+}
+.navbar-container .navbar .list .list-item {
+    cursor: pointer;
+}
+.navbar-container .navbar .list .list-item:nth-child(2) {
+    color: #000000;
+    font-size: 14px;
+}
+.line {
+    position: absolute;
+    left: -350px;
+    width: 68%;
+    border-radius: 40px;
+    height: 1.7px;
+    background-color: #333333;
+}
+
+
+/*--------------------- left image section ------------------*/
+
+main {
+    display: flex;
+}
+.left-image-container {
+    width: 35vw;
+}
+.left-image-container .left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 35vw;
+    z-index: -1;
+}
+.left-image-container .left-image img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    bottom: 0;
+}
+
+/*----------------------- right section --------------------*/
+.right-container {
+    display: flex;
+    position: relative;
+    width: 60vw;
+}
+.heading {
+    position: absolute;
+    left: 10%;
+    top: -40px;
+}
+.heading h1 {
+    font-family: "Merriweather";
+    font-size: 7rem;
+    font-weight: 900;
+    color: #333333;
+}
+.heading > h1 {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.heading > h1::after {
+    content: "";
+    width: 50px;
+    height: 12px;
+    display: inline-block;
+    border: 2px solid #898888;
+    margin-bottom: 25px;
+}
+.heading div {
+    margin-left: 110px;
+    margin-top: -30px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+
+} 
+.heading div p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 30px;
+    color: #898888;
+    padding-left: 40px;
+    padding-top: 30px;
+    
+}
+.heading div h1::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #333333;
+    display: inline-block;
+    border-radius: 50px;
+} 
+
+.right-container .btn-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    right: -190px;
+}
+.right-container .btn-wrapper button {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 17px 78px;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.social-icons {
+    position: absolute;
+    right: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    top: -16px;
+}
+.social-icons img {
+    width: 20px;
+}
+.social-icons img:nth-child(2) {
+    width: 16px;
+}
+.social-icons img:nth-child(3) {
+    width: 12px;
+}
+.social-icons img:nth-child(4) {
+    width: 16px;
+}
+
+/* bottom  section */
+.bottom {
+    position: absolute;
+    top: 320px;
+    left: 100px;
+}
+.bottom ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.bottom ul li {
+    font-size: 1rem;
+    list-style-type: none;
+    color: #868686;
+    display: flex;
+    align-items: center;
+}
+.bottom ul li:not(:last-child) {
+    padding-bottom: 28px;
+}
+.bottom ul li span {
+    background-color: #868686;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: center;
+    margin-right: 20px;
+}
+.active-item .dot {
+    background-color: #333333;
+}
+.active-item p {
+    color: #333333;
+}
+.bottom .line-dot {
+    height: 120%;
+    width: 1.55px;
+    background-color: #868686;
+    position: absolute;
+    left: 7px;
+    top: 20px;
+}
+
+.bottom-quote {
+    position: absolute;
+    left: 270px;
+    top: 0px;
+}
+.bottom-quote p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.img {
+    width: 400px;
+}
+.img > img {
+    width: 100%;
+}
+.quote-icon .fa-quote-right {
+    color: #333333;
+    font-size: 40px;
+}
+.arrow {
+    position: absolute;
+    top: 120px;
+    right: -140px;
+}
+.arrow > img {
+    width: 30px;
+}
