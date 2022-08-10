@@ -5,7 +5,7 @@
 ![Live class](https://img.shields.io/badge/LIVE--CLASS-PROJECT--14-lightgrey)
 
 
-## Project 14 [Live Link](https://samdish-live-class-project-15.netlify.app)
+## Project 14 [Live Link](https://samdish-project-14.netlify.app)
 
 -   Skills Gained in this project
     -   Since this project is heavily based on positioning,
